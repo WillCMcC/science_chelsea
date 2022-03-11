@@ -6,7 +6,7 @@
                         "WORKDIR /usr/src/app",
                         "COPY ./package.json /usr/src/app/",
                         "COPY ./ /usr/src/app",
-                        "RUN npm install && npm cache clean --force && npm run-script build",
+                        "RUN npm install && npm cache clean --force && npm run build",
                         "COPY ./ /usr/src/app",
                         "ENV NODE_ENV production",
                         "ENV PORT 80",

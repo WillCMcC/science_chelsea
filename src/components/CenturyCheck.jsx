@@ -28,40 +28,7 @@ const CenturyCheck = (props) => {
         minHeight: "calc(100vh - 90px)",
       }}
     >
-      <div
-        style={{
-          opacity: isFetching ? ".6" : "0",
-          display: "flex",
-          gap: "20px",
-          fontSize: "12px",
-          lineHeight: "23px",
-          flexDirection: window.innerHeight > window.innerWidth ? 'column' : 'row'
-        }}
-      >
-        <PuffLoader size={15} />
-        <span>I'm asking Centurylink for updates...</span>
-      </div>
-      <h1>Do Chelsea and Will have gigbit ethernet available yet?</h1>
-      {bestStatus != "loading" && <h2>{gigaBit[0] ? "Yes" : "Nope"}</h2>}
-      {status == "loading" && !isFetching && <div>{"Loading..."}</div>}
-      {bestOffer && bestOffer[0] && (
-        <div>
-          <div>{`Best known offer from CenturyLink is ${bestOffer[0].mbps} Mbps down at $${bestOffer[0].price}/month`}</div>
-          <div
-            style={{
-              fontWeight: "lighter",
-            }}
-          >
-            "{bestOffer[0].description}"
-          </div>
-        </div>
-      )}
-      <span
-        style={{
-          alignSelf: 'flex-end',
-          marginTop: 'auto',
-        }}
-      >Contact: will@apime.dev</span>
+      ok
     </div>
   );
 };
