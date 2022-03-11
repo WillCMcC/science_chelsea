@@ -6,8 +6,7 @@ const app = express();
 const getOffers = async () => {
   var tokenConfig = {
     method: "post",
-    url:
-      "https://api.centurylink.com/oauth/token?grant_type=client_credentials",
+    url: "https://api.centurylink.com/oauth/token?grant_type=client_credentials",
     headers: {
       Referer: "https://shop.centurylink.com/",
       Origin: "https://shop.centurylink.com/",
@@ -76,7 +75,7 @@ app.get("/offers", async function (req, res) {
       console.log(error.message);
     }
 
-    if(!existingOffer.data[0]){
+    if (!existingOffer.data[0]) {
       try {
         offerRow = await axios.post(
           "https://apime.dev/api/centurylink_offer",
@@ -98,7 +97,6 @@ app.get("/offers", async function (req, res) {
         console.log(error.message);
       }
     }
-    
   }
   offers.offersList = offers.offersList.map((offer) => {
     return {
@@ -111,4 +109,4 @@ app.get("/offers", async function (req, res) {
   });
   res.json(offers);
 });
-app.listen(9000);
+app.listen(9055);
