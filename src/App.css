@@ -1,4 +1,52 @@
-main-container {
+.main-container {
   width: 100vw;
   height: 100vh;
+  background-image: url('/tree.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+  background-color: #294709;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 400;
+  color: #f8f8ff;
+  top: 50vh;
+  position: relative;
+  margin-left: 5vw;
+  display: flex;
+  letter-spacing: .2rem;
+}
+
+.text {
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: .2rem;
+  top: 70vh;
+  height: auto;
+  padding: 100px;
+}
+
+.right {
+  width: 30vw;
+}
+
+.left {
+  width: 30vw;
+  font-size: 50px;
+}
+
+.cv {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  background-color: #627E16;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 25px;
 }
