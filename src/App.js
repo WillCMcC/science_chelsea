@@ -5,8 +5,10 @@ import "./App.css";
 function App() {
   return (
     <div className="main-container">
-      <button className="cv" download="public/tree.jpg">
-        Download CV{" "}
+      <button className="cv">
+        <a className="linky" href="/tree.jpg" download>
+          Download CV
+        </a>
       </button>
 
       <span className="title">Science. Adventure. Commuity</span>
