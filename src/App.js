@@ -11,7 +11,7 @@ function App() {
         </a>
       </button>
 
-      <span className="title">Science. Adventure. Commuity</span>
+      <span className="title">Science. Adventure. Community</span>
       <div className="text">
         <span className="left">
           Fostering cross-team communication to ensure smooth operation.{" "}
