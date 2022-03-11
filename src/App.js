@@ -5,7 +5,9 @@ import "./App.css";
 function App() {
   return (
     <div className="main-container">
-      <button className="cv">Download CV </button>
+      <button className="cv" download="public/tree.jpg">
+        Download CV{" "}
+      </button>
 
       <span className="title">Science. Adventure. Commuity</span>
       <div className="text">

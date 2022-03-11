@@ -12,7 +12,7 @@
   font-size: 60px;
   font-weight: 400;
   color: #f8f8ff;
-  top: 50vh;
+  top: 65vh;
   position: relative;
   margin-left: 5vw;
   display: flex;
@@ -49,4 +49,5 @@
   padding: 15px 30px;
   border-radius: 5px;
   font-size: 25px;
+  cursor: pointer;
 }
